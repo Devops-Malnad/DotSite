@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    height: 90px;
+    background-color: #343a40;
+}
+
+.header .dotLogo {
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.dotLogo:hover {
+    transform: scale(1.1);
+}
+
+.navbar li a:hover {
+    color: #007bff;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.main .cards {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 35px;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main .cards img {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.main .cards h2 {
+    padding: 20px;
+    color: black;
+}
+
+.main .cards p {
+    padding: 0 0 10px 0;
+    color: grey;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#thiefCity {
+    margin-top: -50px;
+}
+
+#jmce {
+    height: 250px;
+}
+
+#challan {
+    height: 200px;
+}
+
+#sms {
+    height: 250px;
+}
+
+.footer {
+    background-color: #343a40;
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+.footer img {
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #343a40;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
