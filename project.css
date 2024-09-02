@@ -23,6 +23,7 @@ body {
     align-items: center;
     height: 90px;
     background-color: #343a40;
+    position: relative; /* Position relative for absolute children */
 }
 
 .header .dotLogo {
@@ -31,7 +32,7 @@ body {
 }
 
 .menu-icon {
-    display: none;
+    display: none; /* Hidden by default, only show on mobile */
     cursor: pointer;
     font-size: 24px;
     color: white;
@@ -80,42 +81,6 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.main .cards img {
-    border-bottom: 3px solid #007bff;
-    padding-bottom: 10px;
-}
-
-.main .cards h2 {
-    padding: 20px;
-    color: black;
-}
-
-.main .cards p {
-    padding: 0 0 10px 0;
-    color: grey;
-}
-
-.cards:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#thiefCity {
-    margin-top: -50px;
-}
-
-#jmce {
-    height: 250px;
-}
-
-#challan {
-    height: 200px;
-}
-
-#sms {
-    height: 250px;
-}
-
 .footer {
     background-color: #343a40;
     display: flex;
@@ -135,24 +100,32 @@ body {
     transform: scale(1.1);
 }
 
-
-    @media (max-width: 768px) {
+/* Media query for mobile devices */
+@media (max-width: 768px) {
     .navbar {
-        display: none;
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
         background-color: #343a40;
-        width: 200px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 90px; /* Place below the header */
+        right: 0;
+        width: 100%;
+        display: none; /* Initially hidden */
+        padding: 0;
+        z-index: 1000; /* Ensure it appears above other content */
     }
 
     .navbar.show {
-        display: flex;
+        display: flex; /* Show when toggled */
+    }
+
+    .navbar li {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid #444;
+        padding: 15px 0;
     }
 
     .menu-icon {
-        display: block;
+        display: block; /* Show menu icon */
     }
 }
