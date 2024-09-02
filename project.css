@@ -34,7 +34,7 @@ body {
 .menu-icon {
     display: none; /* Hidden by default, only show on mobile */
     cursor: pointer;
-    font-size: 24px;
+    font-size: 30px;
     color: white;
 }
 
