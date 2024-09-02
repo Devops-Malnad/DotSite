@@ -99,7 +99,13 @@ h1, h5 {
     object-fit: contain;
     border-radius: 50%;
 }
+.leftCircle:hover{
+    box-shadow: 5px 5px 50px white , -5px -5px 50px white;
+}
 
+.rightCircle:hover{
+    box-shadow: 5px 5px 50px white , -5px -5px 50px white;
+}
 .rightVerticalLine, .leftVerticalLine {
     height: 9px;
     width: 30%;
