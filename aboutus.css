@@ -385,64 +385,79 @@ body {
 
 
 
-
+/* Existing mobile media query */
 @media (max-width: 768px) {
     .navbar {
-        display: flex; /* Display flex for alignment */
-        flex-direction: row; /* Keep items in a row */
-        justify-content: space-between; /* Space between logo and menu */
-        align-items: center; /* Center items vertically */
-        padding: 10px 20px; /* Adjust padding */
-        position: relative; /* Relative positioning to keep elements in place */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: relative;
     }
 
     .menu-icon {
-        display: flex; /* Show menu icon */
-        flex-direction: column; /* Stack icon bars vertically */
-        cursor: pointer; /* Show pointer on hover */
-        gap: 5px; /* Space between icon bars */
-        position: absolute; /* Position in top right */
-        top: 15px; /* Adjust top spacing */
-        right: 20px; /* Adjust right spacing */
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
 
     .nav-links {
-        position: absolute; /* Position the menu */
-        top: 60px; /* Position below the navbar */
-        right: 0; /* Align to the right */
-        background-color: #343a40; /* Set background color */
-        width: 100%; /* Full width */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #343a40;
+        width: 100%;
         display: none; /* Hide by default */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-        padding: 10px 0; /* Adjust padding */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add shadow for dropdown effect */
-        z-index: 1; /* Ensure it appears on top */
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1;
     }
 
-    .nav-links.open {
+    .nav-links.show {
         display: flex; /* Show the menu when open */
     }
 
     .nav-links a {
-        padding: 15px 0; /* Adjust padding for spacing */
-        width: 100%; /* Full width */
-        text-align: center; /* Center align text */
-        font-size: 18px; /* Adjust font size */
-        color: white; /* Text color */
-        text-decoration: none; /* Remove underline */
-        
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
     }
 
     .navbar .logo {
-        margin-bottom: 0; /* Remove bottom margin */
-        height: 50px; /* Adjust logo size */
+        margin-bottom: 0;
+        height: 50px;
     }
-    .container1{
+
+    .container1 {
         margin-left: 25px !important;
         margin-right: 25px !important;
     }
 }
+
+/* Ensure dropdown menu works in mobile view */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static; /* Make dropdown menu flow within the parent */
+        background-color: #343a40;
+        box-shadow: none; /* Remove shadow */
+        width: 100%; /* Full width */
+    }
+
+    .dropdown-menu li {
+        padding: 10px 15px;
+    }
+}
+
 
 .dropdown {
     position: relative;
