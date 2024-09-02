@@ -237,7 +237,7 @@ body {
         width: 100%;
         padding: 10px 15px; /* Adjust padding for better spacing */
         box-sizing: border-box; /* Include padding in width */
-        display: flex; /* Use flexbox layout */
+        display: space-around; /* Use flexbox layout */
         flex-wrap: wrap; /* Allow items to wrap */
         justify-content: center; /* Center items horizontally */
     }
@@ -254,7 +254,7 @@ body {
     /* Ensure social links fit well */
     .social-link {
         margin: 5px; /* Smaller margin for spacing */
-        display: flex;
+        display: space-around;
         justify-content: center; /* Center social links */
     }
 
