@@ -225,7 +225,8 @@ footer {
 h2, h1 {
     background: linear-gradient(180deg, #007bff, white); 
     -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
+    background-clip:text ;
+    /* -webkit-background-clip: text; */
     font-size: xxx-large;
     text-align: center;
 }
@@ -233,7 +234,8 @@ h2, h1 {
 b {
     background: linear-gradient(180deg, #007bff, rgb(1, 10, 74)); 
     -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
+    background-clip:text ;
+    /* -webkit-background-clip: text; */
 }
 
 p {
