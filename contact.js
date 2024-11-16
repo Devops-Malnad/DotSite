@@ -1,5 +1,5 @@
 // Toggle mobile menu
-document.getElementById('menuIcon').addEventListener('click', () => {
-    const navLinks = document.getElementById('navLinks');
+document.getElementById('menu-icon').addEventListener('click', () => {
+    const navLinks = document.getElementById('nav-links');
     navLinks.classList.toggle('open');
 });

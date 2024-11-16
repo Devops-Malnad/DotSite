@@ -71,9 +71,9 @@ body {
     transition: all 0.3s ease;
 }
 
-.menu-icon:hover {
+/* .menu-icon:hover {
     transform: rotate(90deg);
-}
+} */
 
 h1 {
     color: black;
