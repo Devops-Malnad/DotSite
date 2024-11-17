@@ -290,7 +290,7 @@ h1 {
 
     .nav-links {
         position: absolute; /* Position the menu */
-        top: 60px; /* Position below the navbar */
+        top: 56px; /* Position below the navbar */
         right: 0; /* Align to the right */
         background-color: #343a40; /* Set background color */
         width: 100%; /* Full width */

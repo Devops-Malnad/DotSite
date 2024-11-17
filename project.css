@@ -157,7 +157,7 @@ body {
         flex-direction: column;
         background-color: #343a40;
         position: absolute;
-        top: 90px; /* Place below the header */
+        top: 89px; /* Place below the header */
         right: 0;
         width: 100%;
         display: none; /* Initially hidden */
