@@ -280,12 +280,13 @@ h1 {
 
     .menu-icon {
         display: flex; /* Show menu icon */
+        align-items: center;
         flex-direction: column; /* Stack icon bars vertically */
         cursor: pointer; /* Show pointer on hover */
         gap: 5px; /* Space between icon bars */
-        position: absolute; /* Position in top right */
-        top: 15px; /* Adjust top spacing */
-        right: 20px; /* Adjust right spacing */
+        /* position: absolute; Position in top right */
+        /* top: 15px; Adjust top spacing */
+        /* right: 20px; Adjust right spacing */
     }
 
     .nav-links {

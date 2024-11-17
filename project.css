@@ -178,11 +178,12 @@ body {
 
     .menu-icon {
         display: flex;
+        align-items: center;
         flex-direction: column;
         cursor: pointer;
         gap: 5px;
-        position: absolute;
+        /* position: absolute;
         top: 15px;
-        right: 20px;   
+        right: 20px;    */
 }
 }
