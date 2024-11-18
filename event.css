@@ -288,17 +288,18 @@ p {
 
     .menu-icon {
         display: flex; /* Show menu icon */
+        align-items: center;
         flex-direction: column; /* Stack icon bars vertically */
         cursor: pointer; /* Show pointer on hover */
         gap: 5px; /* Space between icon bars */
-        position: absolute; /* Position in top right */
-        top: 15px; /* Adjust top spacing */
-        right: 20px; /* Adjust right spacing */
+        /* position: absolute; Position in top right */
+        /* top: 15px; Adjust top spacing */
+        /* right: 20px; Adjust right spacing */
     }
 
     .nav-links {
         position: absolute; /* Position the menu */
-        top: 60px; /* Position below the navbar */
+        top: 56px; /* Position below the navbar */
         right: 0; /* Align to the right */
         background-color: #343a40; /* Set background color */
         width: 100%; /* Full width */
