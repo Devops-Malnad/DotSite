@@ -43,6 +43,7 @@ body {
     height: 3px;
     background-color: white;
     border-radius: 100px;
+    transition: transform 0.3s ease;
 }
 
 .navbar {
