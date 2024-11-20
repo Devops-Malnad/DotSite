@@ -407,6 +407,7 @@ body {
         right: 20px; */
     }
 
+
     .nav-links {
         position: absolute;
         top: 56px;
@@ -443,6 +444,7 @@ body {
         margin-left: 25px !important;
         margin-right: 25px !important;
     }
+
 }
 
 /* Ensure dropdown menu works in mobile view */
