@@ -7,6 +7,11 @@ let rotate_1=document.getElementById('rotate_1');
 let rotate_2=document.getElementById('rotate_2');
 let hide_1=document.getElementById('hide_1');
 let hide_2=document.getElementById('hide_2');
+// const body = document.getElementsByTagName('body')[0];
+// console.log(body);
+// const main_body = document.getElementsByClassName(body);
+// const main_ele = main_body.getElementsByClassName('container1')[0];
+// console.log(main.ele);
 
     menuIcon.addEventListener("click", function () {
         navLinks.classList.toggle("show");
@@ -16,6 +21,7 @@ let hide_2=document.getElementById('hide_2');
             rotate_2.style.transform = "rotate(-45deg)";
             hide_1.style.zIndex = "-1";
             hide_2.style.zIndex = "-1";
+            // main_body[0].style.filter = 'blur(4px)';
         }
         if (navLinks.classList.value == "nav-links"){
             rotate_1.style.transform = "rotate(0deg)";
